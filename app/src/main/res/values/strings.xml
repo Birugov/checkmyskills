@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rate for date</string>
+    <string name="rate_fragment_text">Rate for today:</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/dateFragment"
+    >
+
+    <fragment
+        android:id="@+id/dateFragment"
+        android:name="ru.techcrat.checkmyskills.ui.DateFragment"
+        android:label="fragment_date"
+        tools:layout="@layout/fragment_date">
+        <action
+            android:id="@+id/action_dateFragment_to_rateFragment2"
+            app:destination="@id/rateFragment"
+            app:enterAnim="@animator/slide_in_right"
+            app:exitAnim="@animator/slide_out_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="ru.techcrat.checkmyskills.ui.RateFragment"
+        android:label="rate_fragment"
+        tools:layout="@layout/rate_fragment">
+    </fragment>
+</navigation>
